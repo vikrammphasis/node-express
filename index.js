@@ -26,8 +26,12 @@ res.end('<html><body><h1>This is an Express Server</h1></body></html>');
 
 });
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
-server.listen(port, hostname, () => {
-console.log(`Server running at http://${hostname}:${port}/`);
+// server.listen(port, hostname, () => {
+// console.log(`Server running at http://${hostname}:${port}/`);
+// });
+
+var listener = app.listen(8080, function(){
+    console.log('Listening on port ' + listener.address().port); //Listening on port 8888
 });
