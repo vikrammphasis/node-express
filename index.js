@@ -7,7 +7,7 @@ const dishRouter = require('./routes/dishRouter');
 const promoRouter = require('./routes/promoRouter');
 const leaderRouter = require('./routes/leaderRouter');
 const hostname = 'localhost';
-const port = 3000;
+const port =80;
 
 const app = express();
 app.use(morgan('dev'));
